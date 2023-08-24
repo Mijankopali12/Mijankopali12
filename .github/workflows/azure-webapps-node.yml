@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>•••</title>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Tocca.js/2.0.9/Tocca.min.js" integrity="sha512-1pl1Qq8Gv3E5/X79OCHr1Dada1FusKwnsKEnsH5t2i9D9hJDClClV8wEMRekcdeC+RCNQpSmPpOT0MpVlWfyhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    </head>
+    <body>
+    <div id="NP">
+        <div id="panel">
+            <div class="box b1">
+                <div class="bx bx-sort"></div>
+                <div class="bx bx-wifi"></div>
+                <div class="bx bx-bluetooth"></div>
+                <div class="bx bx-memory-card"></div>
+                <div class="bx bx-lock-alt"></div>
+                <div class="bx bx-wifi-off"></div>
+                <div class="bx bx-bell-off"></div>
+                <div class="bx bx-alarm-off"></div>
+                <div class="bx bx-transfer-alt"></div>
+                <div class="bx bx-data"></div>
+                <div class="bx bx-moon"></div>
+                <div class="bx bx-lock-open-alt"></div>
+                <div class="bx bxs-battery-charging"></div>
+                <div class="bx bxs-plane-land"></div>
+                <div class="bx bx-chat"></div>
+                <div class="bx bx-brightness"></div>
+            </div>
+            <div class="box b2">
+                <div class="bx bx-home"></div>
+                <div class="bx bx-category"></div>
+                <div class="bx bx-bookmark-alt"></div>
+                <div class="bx bxl-google-cloud"></div>
+                <div class="bx bx-envelope-open"></div>
+                <div class="bx bx-outline"></div>
+                <div class="bx bx-camera-movie"></div>
+                <div class="bx bx-calendar"></div>
+                <div class="bx bx-book-alt"></div>
+                <div class="bx bx-calculator"></div>
+                <div class="bx bx-file-find"></div>
+                <div class="bx bxs-adjust-alt"></div>
+                <div class="bx bxs-notification"></div>
+                <div class="bx bxs-carousel"></div>
+                <div class="bx bx-dialpad-alt"></div>
+                <div class="bx bx-mobile-vibration"></div>
+            </div>
+        </div>
+        <div id="dots">
+            <div class="d d1"></div>
+            <div class="d d2"></div>
+        </div>
+    </div>
+    </body>
+    <script>
+new Tiltify($$("#NP"))
+onload = () => NP.style.filter = "blur(0px)"
+document.querySelector(".d1").style.background = "rgba(255,255,255,1)"
+document.querySelectorAll(".bx").forEach(e => {
+    e.onclick = () => e.classList.toggle("active")
+})
+NP.addEventListener("swipeleft", () => {
+    document.querySelector(".b1").style.scale = "0"
+    document.querySelector(".b2").style.scale = "1"
+    document.querySelector(".d1").style.background = "rgba(255,255,255,.5)"
+    document.querySelector(".d2").style.background = "rgba(255,255,255,1)"
+})
+NP.addEventListener("swiperight", () => {
+    document.querySelector(".b2").style.scale = "0"
+    document.querySelector(".b1").style.scale = "1"
+    document.querySelector(".d2").style.background = "rgba(255,255,255,.5)"
+    document.querySelector(".d1").style.background = "rgba(255,255,255,1)"
+})
+    </script>
+</html><!DOCTYPE html>
+<html>
+    <head>
+        <title>•••</title>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Tocca.js/2.0.9/Tocca.min.js" integrity="sha512-1pl1Qq8Gv3E5/X79OCHr1Dada1FusKwnsKEnsH5t2i9D9hJDClClV8wEMRekcdeC+RCNQpSmPpOT0MpVlWfyhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    </head>
+    <body>
+    <div id="NP">
+        <div id="panel">
+            <div class="box b1">
+                <div class="bx bx-sort"></div>
+                <div class="bx bx-wifi"></div>
+                <div class="bx bx-bluetooth"></div>
+                <div class="bx bx-memory-card"></div>
+                <div class="bx bx-lock-alt"></div>
+                <div class="bx bx-wifi-off"></div>
+                <div class="bx bx-bell-off"></div>
+                <div class="bx bx-alarm-off"></div>
+                <div class="bx bx-transfer-alt"></div>
+                <div class="bx bx-data"></div>
+                <div class="bx bx-moon"></div>
+                <div class="bx bx-lock-open-alt"></div>
+                <div class="bx bxs-battery-charging"></div>
+                <div class="bx bxs-plane-land"></div>
+                <div class="bx bx-chat"></div>
+                <div class="bx bx-brightness"></div>
+            </div>
+            <div class="box b2">
+                <div class="bx bx-home"></div>
+                <div class="bx bx-category"></div>
+                <div class="bx bx-bookmark-alt"></div>
+                <div class="bx bxl-google-cloud"></div>
+                <div class="bx bx-envelope-open"></div>
+                <div class="bx bx-outline"></div>
+                <div class="bx bx-camera-movie"></div>
+                <div class="bx bx-calendar"></div>
+                <div class="bx bx-book-alt"></div>
+                <div class="bx bx-calculator"></div>
+                <div class="bx bx-file-find"></div>
+                <div class="bx bxs-adjust-alt"></div>
+                <div class="bx bxs-notification"></div>
+                <div class="bx bxs-carousel"></div>
+                <div class="bx bx-dialpad-alt"></div>
+                <div class="bx bx-mobile-vibration"></div>
+            </div>
+        </div>
+        <div id="dots">
+            <div class="d d1"></div>
+            <div class="d d2"></div>
+        </div>
+    </div>
+    </body>
+    <script>
+new Tiltify($$("#NP"))
+onload = () => NP.style.filter = "blur(0px)"
+document.querySelector(".d1").style.background = "rgba(255,255,255,1)"
+document.querySelectorAll(".bx").forEach(e => {
+    e.onclick = () => e.classList.toggle("active")
+})
+NP.addEventListener("swipeleft", () => {
+    document.querySelector(".b1").style.scale = "0"
+    document.querySelector(".b2").style.scale = "1"
+    document.querySelector(".d1").style.background = "rgba(255,255,255,.5)"
+    document.querySelector(".d2").style.background = "rgba(255,255,255,1)"
+})
+NP.addEventListener("swiperight", () => {
+    document.querySelector(".b2").style.scale = "0"
+    document.querySelector(".b1").style.scale = "1"
+    document.querySelector(".d2").style.background = "rgba(255,255,255,.5)"
+    document.querySelector(".d1").style.background = "rgba(255,255,255,1)"
+})
+    </script>
+</html><!DOCTYPE html>
+<html>
+    <head>
+        <title>•••</title>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Tocca.js/2.0.9/Tocca.min.js" integrity="sha512-1pl1Qq8Gv3E5/X79OCHr1Dada1FusKwnsKEnsH5t2i9D9hJDClClV8wEMRekcdeC+RCNQpSmPpOT0MpVlWfyhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    </head>
+    <body>
+    <div id="NP">
+        <div id="panel">
+            <div class="box b1">
+                <div class="bx bx-sort"></div>
+                <div class="bx bx-wifi"></div>
+                <div class="bx bx-bluetooth"></div>
+                <div class="bx bx-memory-card"></div>
+                <div class="bx bx-lock-alt"></div>
+                <div class="bx bx-wifi-off"></div>
+                <div class="bx bx-bell-off"></div>
+                <div class="bx bx-alarm-off"></div>
+                <div class="bx bx-transfer-alt"></div>
+                <div class="bx bx-data"></div>
+                <div class="bx bx-moon"></div>
+                <div class="bx bx-lock-open-alt"></div>
+                <div class="bx bxs-battery-charging"></div>
+                <div class="bx bxs-plane-land"></div>
+                <div class="bx bx-chat"></div>
+                <div class="bx bx-brightness"></div>
+            </div>
+            <div class="box b2">
+                <div class="bx bx-home"></div>
+                <div class="bx bx-category"></div>
+                <div class="bx bx-bookmark-alt"></div>
+                <div class="bx bxl-google-cloud"></div>
+                <div class="bx bx-envelope-open"></div>
+                <div class="bx bx-outline"></div>
+                <div class="bx bx-camera-movie"></div>
+                <div class="bx bx-calendar"></div>
+                <div class="bx bx-book-alt"></div>
+                <div class="bx bx-calculator"></div>
+                <div class="bx bx-file-find"></div>
+                <div class="bx bxs-adjust-alt"></div>
+                <div class="bx bxs-notification"></div>
+                <div class="bx bxs-carousel"></div>
+                <div class="bx bx-dialpad-alt"></div>
+                <div class="bx bx-mobile-vibration"></div>
+            </div>
+        </div>
+        <div id="dots">
+            <div class="d d1"></div>
+            <div class="d d2"></div>
+        </div>
+    </div>
+    </body>
+    <script>
+new Tiltify($$("#NP"))
+onload = () => NP.style.filter = "blur(0px)"
+document.querySelector(".d1").style.background = "rgba(255,255,255,1)"
+document.querySelectorAll(".bx").forEach(e => {
+    e.onclick = () => e.classList.toggle("active")
+})
+NP.addEventListener("swipeleft", () => {
+    document.querySelector(".b1").style.scale = "0"
+    document.querySelector(".b2").style.scale = "1"
+    document.querySelector(".d1").style.background = "rgba(255,255,255,.5)"
+    document.querySelector(".d2").style.background = "rgba(255,255,255,1)"
+})
+NP.addEventListener("swiperight", () => {
+    document.querySelector(".b2").style.scale = "0"
+    document.querySelector(".b1").style.scale = "1"
+    document.querySelector(".d2").style.background = "rgba(255,255,255,.5)"
+    document.querySelector(".d1").style.background = "rgba(255,255,255,1)"
+})
+    </script>
+</html>
